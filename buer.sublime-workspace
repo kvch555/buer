@@ -1,0 +1,809 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"impl",
+				"implode〔function〕"
+			],
+			[
+				"all",
+				"$allitems〔variable〕"
+			],
+			[
+				"mt",
+				"mt_rand"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "flow.php",
+			"settings":
+			{
+				"buffer_size": 1963,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "view/front/jiesuan.html",
+			"settings":
+			{
+				"buffer_size": 5865,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view/front/tijiao.html",
+			"settings":
+			{
+				"buffer_size": 7998,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 216.0,
+		"history":
+		[
+			"import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/PHPnow5.2/vhosts/127.0.0.26",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front"
+	],
+	"file_history":
+	[
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1221/bool/flow.php",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1225/bool/bool.sql",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/goods-cate/goods-cate.sql",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1221/bool/bool.sql",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1214/bool/bool.sql",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1220/bool/01.php",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1221/bool/01.php",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1220/bool/bool.sql",
+		"/E/PHP笔记/自学IT网/Javascript高级/this笔记02.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/address.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/flow.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/include/mysql.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/model/Model.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/model/GoodsModel.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/goods.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/jiesuan.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/tool/CartTool.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/shangpin.html",
+		"/E/广州中创金融/公司服务器账户/文档20150615/服务器账号.txt",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/header.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/index.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/lanmu.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/tijiao.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/01.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/include/init.php",
+		"/F/迅雷下载/自学IT网视频/⑦ 布尔商城PHP实战视频程 (70集全)/bool1220/bool/tool/CartTool.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/tool/UpTool.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/tool/ImageTool.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/index.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/include/lib_base.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/include/log.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/include/conf.class.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/admin/drag.php",
+		"/C/Users/Administrator/Desktop/新建文本文档.txt",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/footer.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/login.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/logout.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/denglu.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/category.php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/msg.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/header.html",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Admin/View/Data/zqMap.html",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Wap/Controller/IndexController.class.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Api/接口文档.html",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Wap/View/Index/index.html",
+		"/C/Users/Administrator/Desktop/aa.txt",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Api/Controller/ApiController.class.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Api/Controller/UserController.class.php",
+		"/C/Users/Administrator/Desktop/sitemap.xml",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Common/Conf/config.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Api/Controller/DebtController.class.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Public/jpush/jp.class.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Common/Common/function.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Common/Common/errorCode.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Common/Model/UserModel.class.php",
+		"/C/Users/Administrator/Desktop/新建文本文档 (2).txt",
+		"/E/PHPnow5.2/vhosts/cuicui/Public/jpush/jpush/jpush/src/JPush/JPushClient.php",
+		"/C/Users/Administrator/Downloads/jpushV2-master/jpushV2-master/jpush.php",
+		"/C/Users/Administrator/Downloads/jpushV2-master/jpushV2-master/README.md",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Api/Conf/config.php",
+		"/E/PHPnow5.2/vhosts/cuicui/Application/Admin/Controller/DebtController.class.php",
+		"/E/PHPnow5.2/vhosts/cuicui/import/api.php",
+		"/E/PHPnow5.2/vhosts/cuicui/config_cuicuibao.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Local/Auto Save Session.sublime_session",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Local/Session.sublime_session",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/daimokuai/adminajax/nkefu_contact.php",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/daimokuai/admin/admin.install.php",
+		"/C/Users/Administrator/Desktop/deayou.mysql.php",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/daimokuai/admin/code.php",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/daimokuai/admin/admin.module.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/CTags/CTags.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/CTags.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 2/Packages/CTags/README.rst",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Installed Packages/CTags.sublime-package",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/aaaall.txt",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/index.php",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/aaasel.txt",
+		"/C/Users/Administrator/Desktop/aa.php",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/themes/ddwang/amount_apply.html",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/404.html",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/ajax.php",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/daimokuai/ucenter/uc_client/model/pm.php",
+		"/E/PHPnow5.2/vhosts/xianxiatest.com/daimokuai/member/user.php.dump"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+			"E:\\PHPnow5.2\\vhosts\\127.0.0.26",
+			"E:\\PHPnow5.2\\vhosts\\cuicui"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"商品总额",
+			"jiesuan",
+			"购买",
+			"define('ACC",
+			"getPrice",
+			"items",
+			"sum",
+			"incNum",
+			"hasItem",
+			"$this->",
+			"self",
+			"mainbox",
+			"link",
+			"config_cuicuibao.php",
+			"APP_DEBUG",
+			"cuicui_zq",
+			"page",
+			"blic function debtList(){\n    	//参数-获取页数\n    	$page = $this->getParam('page',1);\n    	$pageSize 	= self::PAGESIZE;\n\n    	//参数-获取省市\n    	$province = $this->getParam('province',0);\n    	$city = $this->getParam('city',0);",
+			"getParam",
+			"$pageSize",
+			"daidaicn",
+			"notify",
+			"msg",
+			"notify",
+			"nsg",
+			"validityToken",
+			"10020",
+			"userLogin ",
+			"getToken",
+			"validityToken",
+			"notValidityToken",
+			"10601",
+			"debtDetails",
+			"nav",
+			"command",
+			"ctag.exe"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "flow.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1579,
+								1579
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2118.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "view/front/jiesuan.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3366.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "view/front/tijiao.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6139,
+								6139
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5657.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 42.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "buer.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tijiao",
+				"view\\front\\tijiao.html"
+			],
+			[
+				"jiesu",
+				"view\\front\\jiesuan.html"
+			],
+			[
+				"flow",
+				"flow.php"
+			],
+			[
+				"goods",
+				"model\\GoodsModel.class.php"
+			],
+			[
+				"cart",
+				"tool\\CartTool.class.php"
+			],
+			[
+				"model",
+				"model\\Model.class.php"
+			],
+			[
+				"jiesuan",
+				"view\\front\\jiesuan.html"
+			],
+			[
+				"goodsm",
+				"model\\GoodsModel.class.php"
+			],
+			[
+				"goodsmod",
+				"model\\GoodsModel.class.php"
+			],
+			[
+				"flow.hp",
+				"flow.php"
+			],
+			[
+				"shangpin",
+				"view\\front\\shangpin.html"
+			],
+			[
+				"header.thml",
+				"view\\front\\header.html"
+			],
+			[
+				"cartt",
+				"tool\\CartTool.class.php"
+			],
+			[
+				"lanmu",
+				"view\\front\\lanmu.html"
+			],
+			[
+				"header",
+				"view\\front\\header.html"
+			],
+			[
+				"footer",
+				"view\\front\\footer.html"
+			],
+			[
+				"de",
+				"view\\front\\denglu.html"
+			],
+			[
+				"deng",
+				"view\\front\\denglu.html"
+			],
+			[
+				"denglu",
+				"view\\front\\denglu.html"
+			],
+			[
+				"login",
+				"login.php"
+			],
+			[
+				"lanmu.",
+				"view\\front\\lanmu.html"
+			],
+			[
+				"logut.php",
+				"logout.php"
+			],
+			[
+				"loginphp",
+				"login.php"
+			],
+			[
+				"cate",
+				"category.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"init.",
+				"include\\init.php"
+			],
+			[
+				"shangpi",
+				"view\\front\\shangpin.html"
+			],
+			[
+				"index.html",
+				"view\\front\\index.html"
+			],
+			[
+				"lanm",
+				"view\\front\\lanmu.html"
+			],
+			[
+				"categr",
+				"category.php"
+			],
+			[
+				"index.htl",
+				"view\\front\\index.html"
+			],
+			[
+				"index.php",
+				"index.php"
+			],
+			[
+				"zq",
+				"Application\\Admin\\View\\Data\\zqMap.html"
+			],
+			[
+				"cuicui",
+				"cuicuibao.sql"
+			],
+			[
+				"接口文档",
+				"Application\\Api\\接口文档.html"
+			],
+			[
+				"debt",
+				"Application\\Api\\Controller\\DebtController.class.php"
+			],
+			[
+				"error",
+				"Application\\Common\\Common\\errorCode.php"
+			],
+			[
+				"user",
+				"Application\\Api\\Controller\\UserController.class.php"
+			],
+			[
+				"api",
+				"Application\\Api\\Controller\\ApiController.class.php"
+			],
+			[
+				"api.php",
+				"Application\\Api\\Controller\\ApiController.class.php"
+			],
+			[
+				"接口",
+				"Application\\Api\\接口文档.html"
+			],
+			[
+				"dump/",
+				"daimokuai\\ucenter\\uc_client\\model\\pm.php"
+			],
+			[
+				"user.php",
+				"daimokuai\\member\\user.php.dump"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\PHPnow5.2\\vhosts\\xianxiatest.com\\daidai.sublime-project"
+			],
+			[
+				"\\",
+				"D:\\projectChange\\daidai.sublime-workspace"
+			],
+			[
+				"daidai",
+				"E:\\PHPnow5.2\\vhosts\\xianxiatest.com\\daidai.sublime-project"
+			],
+			[
+				"ber",
+				"E:\\PHPnow5.2\\vhosts\\127.0.0.26\\buer.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 195.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

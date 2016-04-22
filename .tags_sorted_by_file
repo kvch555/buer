@@ -1,0 +1,404 @@
+ACC	admin\cateadd.php	/^define('ACC',true);$/;"	d
+cate	admin\cateadd.php	/^$cate=new CateModel();$/;"	v
+rs	admin\cateadd.php	/^$rs=$cate->GetCatTree($rs,0);$/;"	v
+rs	admin\cateadd.php	/^$rs=$cate->select();$/;"	v
+ACC	admin\cateaddAction.php	/^define('ACC',true);$/;"	d
+cate	admin\cateaddAction.php	/^$cate = new CateModel($data);$/;"	v
+data	admin\cateaddAction.php	/^$data=array();$/;"	v
+ACC	admin\catedel.php	/^define('ACC',true);$/;"	d
+cat_id	admin\catedel.php	/^$cat_id=$_GET['cat_id']+0;$/;"	v
+cate	admin\catedel.php	/^$cate = new CateModel();	$/;"	v
+sons	admin\catedel.php	/^$sons=$cate->getSon($cat_id);$/;"	v
+ACC	admin\catedit.php	/^define('ACC',true);$/;"	d
+cat_id	admin\catedit.php	/^$cat_id=$_GET['cat_id']+0;$/;"	v
+cate	admin\catedit.php	/^$cate=new CateModel();$/;"	v
+rs	admin\catedit.php	/^$rs=$cate->find($cat_id);$/;"	v
+rs_all	admin\catedit.php	/^$rs_all=$cate->GetCatTree($rs_all,0);$/;"	v
+rs_all	admin\catedit.php	/^$rs_all=$cate->select();$/;"	v
+ACC	admin\cateditAction.php	/^define('ACC',true);$/;"	d
+cat_id	admin\cateditAction.php	/^$cat_id=$_POST['cat_id']+0;$/;"	v
+cate	admin\cateditAction.php	/^$cate = new CateModel($data);$/;"	v
+data	admin\cateditAction.php	/^$data=array();$/;"	v
+flag	admin\cateditAction.php	/^		$flag=false;$/;"	v
+flag	admin\cateditAction.php	/^$flag=true;$/;"	v
+tree	admin\cateditAction.php	/^$tree=$cate->getTree($data['parent_id']);$/;"	v
+ACC	admin\catelist.php	/^define('ACC',true);$/;"	d
+cate	admin\catelist.php	/^$cate=new CateModel();$/;"	v
+rs	admin\catelist.php	/^$rs=$cate->GetCatTree($rs,0);$/;"	v
+rs	admin\catelist.php	/^$rs=$cate->select();$/;"	v
+ACC	admin\drag.php	/^define('ACC',true);$/;"	d
+ACC	admin\goods.php	/^define('ACC',true);$/;"	d
+g	admin\goods.php	/^$g=$goods->find($goods_id);$/;"	v
+goods	admin\goods.php	/^$goods=new GoodsModel();$/;"	v
+goods_id	admin\goods.php	/^$goods_id=$_GET['goods_id']+0;$/;"	v
+ACC	admin\goodsadd.php	/^define('ACC',true);$/;"	d
+cate	admin\goodsadd.php	/^$cate=new CateModel();$/;"	v
+rs	admin\goodsadd.php	/^$rs=$cate->GetCatTree($rs,0);$/;"	v
+rs	admin\goodsadd.php	/^$rs=$cate->select();$/;"	v
+ACC	admin\goodsaddAction.php	/^define('ACC',true);$/;"	d
+data	admin\goodsaddAction.php	/^$data=$goods->_autoFill($data);		\/\/自动填充$/;"	v
+data	admin\goodsaddAction.php	/^$data=$goods->_facade($_POST); 		\/\/自动过滤$/;"	v
+data	admin\goodsaddAction.php	/^$data=array();$/;"	v
+goods	admin\goodsaddAction.php	/^$goods= new GoodsModel();$/;"	v
+goods_img	admin\goodsaddAction.php	/^$goods_img=dirname($ori_img).'\/goods_'.basename($ori_img);$/;"	v
+ori_img	admin\goodsaddAction.php	/^$ori_img=$uptool->up('ori_img');$/;"	v
+ori_img	admin\goodsaddAction.php	/^$ori_img=ROOT.$ori_img;$/;"	v
+thumb_img	admin\goodsaddAction.php	/^$thumb_img=dirname($ori_img).'\/thumb_'.basename($ori_img);$/;"	v
+uptool	admin\goodsaddAction.php	/^$uptool=new UpTool();$/;"	v
+ACC	admin\goodslist.php	/^define('ACC',true);$/;"	d
+goodlist	admin\goodslist.php	/^$goodlist=$goods->getGoods();$/;"	v
+goods	admin\goodslist.php	/^$goods=new GoodsModel();$/;"	v
+ACC	admin\goodstrash.php	/^define('ACC',true);$/;"	d
+goodlist	admin\goodstrash.php	/^	$goodlist=$goods->getTrash();$/;"	v
+goods	admin\goodstrash.php	/^	$goods=new GoodsModel();$/;"	v
+goods_id	admin\goodstrash.php	/^	$goods_id=$_GET['goods_id']+0;$/;"	v
+ACC	admin\index.php	/^define('ACC',true);$/;"	d
+ACC	admin\left.php	/^define('ACC',true);$/;"	d
+ACC	admin\main.php	/^define('ACC',true);$/;"	d
+ACC	admin\top.php	/^define('ACC',true);$/;"	d
+ACC	category.php	/^define('ACC',true);$/;"	d
+cat	category.php	/^$cat=new CateModel();$/;"	v
+cat_id	category.php	/^$cat_id=isset($_GET['cat_id'])?$_GET['cat_id']+0:0;$/;"	v
+category	category.php	/^$category=$cat->find($cat_id);$/;"	v
+cats	category.php	/^$cats=$cat->select();$/;"	v
+goods	category.php	/^$goods=new GoodsModel();$/;"	v
+goodslist	category.php	/^$goodslist=$goods->catGoods($cat_id);$/;"	v
+nav	category.php	/^$nav=$cat->getTree($cat_id);$/;"	v
+sort	category.php	/^$sort=$cat->GetCatTree($cats,0,1);$/;"	v
+ACC	flow.php	/^define('ACC',true);$/;"	d
+act	flow.php	/^$act=isset($_GET['act'])?$_GET['act']:'buy';$/;"	v
+cart	flow.php	/^$cart=CartTool::getCart();	\/\/获取购物车实例$/;"	v
+discount	flow.php	/^	$discount=$market_total-$total;$/;"	v
+g	flow.php	/^		$g=$goods->find($goods_id);$/;"	v
+goods	flow.php	/^$goods=new GoodsModel();$/;"	v
+goods_id	flow.php	/^	$goods_id=isset($_GET['goods_id'])?$_GET['goods_id']+0:0;$/;"	v
+items	flow.php	/^			$items=$cart->all();$/;"	v
+items	flow.php	/^	$items=$cart->all();$/;"	v
+items	flow.php	/^	$items=$goods->getCartGoods($items);$/;"	v
+market_total	flow.php	/^	$market_total=0.0;$/;"	v
+msg	flow.php	/^				$msg='库存不足';$/;"	v
+msg	flow.php	/^				$msg='此商品不能购买';$/;"	v
+msg	flow.php	/^	$msg='购物车已清空';$/;"	v
+num	flow.php	/^	$num=isset($_GET['num'])?$_GET['num']+0:1;$/;"	v
+rate	flow.php	/^	$rate=round(($discount\/$total)*100,2);$/;"	v
+total	flow.php	/^	$total=$cart->getPrice();   \/\/获取购物车中的商品总价格$/;"	v
+ACC	goods.php	/^define('ACC',true);$/;"	d
+cat	goods.php	/^$cat=new CateModel();$/;"	v
+g	goods.php	/^$g= $goods->find($goods_id);$/;"	v
+goods	goods.php	/^$goods=new GoodsModel();$/;"	v
+goods_id	goods.php	/^$goods_id=isset($_GET['goods_id'])?$_GET['goods_id']+0:0;$/;"	v
+nav	goods.php	/^$nav=$cat->getTree($g['cat_id']);$/;"	v
+__clone	include\conf.class.php	/^    final protected function __clone() {$/;"	f
+__construct	include\conf.class.php	/^    final protected function __construct() {$/;"	f
+__get	include\conf.class.php	/^    public function __get($key) {$/;"	f
+__set	include\conf.class.php	/^    public function __set($key,$value) {$/;"	f
+conf	include\conf.class.php	/^$conf = conf::getIns();$/;"	v
+conf	include\conf.class.php	/^class conf {$/;"	c
+data	include\conf.class.php	/^        $this->data = $_CFG;$/;"	v
+data	include\conf.class.php	/^    protected $data = array();$/;"	v
+getIns	include\conf.class.php	/^    public static function getIns() {$/;"	f
+ins	include\conf.class.php	/^    protected static $ins = null;$/;"	v
+_CFG	include\config.inc.php	/^$_CFG = array();$/;"	v
+autoExecute	include\db.class.php	/^    public abstract function autoExecute($table,$data,$act='insert',$where='');$/;"	f
+connect	include\db.class.php	/^    public abstract function connect($h,$u,$p);$/;"	f
+db	include\db.class.php	/^abstract class db {$/;"	c
+getAll	include\db.class.php	/^    public abstract function getAll($sql);$/;"	f
+getOne	include\db.class.php	/^    public abstract function getOne($sql);$/;"	f
+getRow	include\db.class.php	/^    public abstract function getRow($sql);$/;"	f
+query	include\db.class.php	/^    public abstract function query($sql);$/;"	f
+DEBUG	include\init.php	/^define('DEBUG',true);$/;"	d
+ROOT	include\init.php	/^define('ROOT',str_replace('\\\\','\/',dirname(dirname(__FILE__))) . '\/');$/;"	d
+_COOKIE	include\init.php	/^$_COOKIE = _addslashes($_COOKIE);$/;"	v
+_GET	include\init.php	/^$_GET = _addslashes($_GET);$/;"	v
+_POST	include\init.php	/^$_POST = _addslashes($_POST);$/;"	v
+__autoload	include\init.php	/^function __autoload($class){$/;"	f
+_addslashes	include\lib_base.php	/^function _addslashes($arr) {$/;"	f
+dump	include\lib_base.php	/^function dump($arr){$/;"	f
+k	include\lib_base.php	/^    foreach($arr as $k=>$v) {$/;"	v
+mstrlen	include\lib_base.php	/^function mstrlen($str,$len=10){$/;"	f
+str	include\lib_base.php	/^        $str=mb_substr($str,0,$len,'UTF8').".....";$/;"	v
+Log	include\log.class.php	/^class Log {$/;"	c
+bak	include\log.class.php	/^        $bak = ROOT . 'data\/log\/' . date('ymd') . mt_rand(10000,99999) . '.bak';$/;"	v
+bak	include\log.class.php	/^    public static function bak() {$/;"	f
+fh	include\log.class.php	/^        $fh = fopen($log,'ab');$/;"	v
+isBak	include\log.class.php	/^    public static function isBak() {$/;"	f
+log	include\log.class.php	/^        $log = ROOT . 'data\/log\/' . self::LOGFILE;$/;"	v
+log	include\log.class.php	/^        $log = self::isBak(); \/\/ 计算出日志文件的地址$/;"	v
+size	include\log.class.php	/^        $size = filesize($log);$/;"	v
+write	include\log.class.php	/^    public static function write($cont) {$/;"	f
+__construct	include\mysql.class.php	/^    protected function __construct() {$/;"	f
+__destruct	include\mysql.class.php	/^    public function __destruct() {$/;"	f
+affected_rows	include\mysql.class.php	/^    public function affected_rows() {$/;"	f
+autoExecute	include\mysql.class.php	/^    public function autoExecute($table,$arr,$mode='insert',$where = ' where 1 limit 1') {$/;"	f
+conf	include\mysql.class.php	/^        $this->conf = conf::getIns();$/;"	v
+conf	include\mysql.class.php	/^    private $conf = array();$/;"	v
+conn	include\mysql.class.php	/^        $this->conn = mysql_connect($h,$u,$p);$/;"	v
+conn	include\mysql.class.php	/^    private $conn = NULL;$/;"	v
+connect	include\mysql.class.php	/^    public function connect($h,$u,$p) {$/;"	f
+err	include\mysql.class.php	/^            $err = new Exception('连接失败');$/;"	v
+getAll	include\mysql.class.php	/^    public function getAll($sql) {$/;"	f
+getIns	include\mysql.class.php	/^    public static function getIns() {$/;"	f
+getOne	include\mysql.class.php	/^    public function getOne($sql) {$/;"	f
+getRow	include\mysql.class.php	/^    public function getRow($sql) {$/;"	f
+ins	include\mysql.class.php	/^    private static $ins = NULL;$/;"	v
+insert_id	include\mysql.class.php	/^    public function insert_id() {$/;"	f
+k	include\mysql.class.php	/^            foreach($arr as $k=>$v) {$/;"	v
+list	include\mysql.class.php	/^        $list = array();$/;"	v
+mysql	include\mysql.class.php	/^class mysql extends db {$/;"	c
+query	include\mysql.class.php	/^    public function query($sql) {$/;"	f
+row	include\mysql.class.php	/^        $row = mysql_fetch_row($rs);$/;"	v
+rs	include\mysql.class.php	/^        $rs = $this->query($sql);$/;"	v
+rs	include\mysql.class.php	/^        $rs = mysql_query($sql,$this->conn);$/;"	v
+select_db	include\mysql.class.php	/^    protected function select_db($db) {$/;"	f
+setChar	include\mysql.class.php	/^    protected function setChar($char) {$/;"	f
+sql	include\mysql.class.php	/^            $sql = 'update ' . $table .' set ';$/;"	v
+sql	include\mysql.class.php	/^            $sql = rtrim($sql,',');$/;"	v
+sql	include\mysql.class.php	/^        $sql = 'insert into ' . $table . ' (' . implode(',',array_keys($arr)) . ')';$/;"	v
+sql	include\mysql.class.php	/^        $sql = 'set names ' . $char;$/;"	v
+sql	include\mysql.class.php	/^        $sql = 'use ' . $db;$/;"	v
+ACC	index.php	/^define('ACC',true);$/;"	d
+fe_list	index.php	/^$fe_list=$goods->catGoods($female_id);$/;"	v
+female_id	index.php	/^$female_id=4;$/;"	v
+goods	index.php	/^$goods=new GoodsModel();$/;"	v
+newlist	index.php	/^$newlist=$goods->getNew(5);$/;"	v
+ACC	login.php	/^define('ACC',true);$/;"	d
+_SESSION	login.php	/^		$_SESSION = $row;$/;"	v
+msg	login.php	/^		$msg="登陆成功";$/;"	v
+msg	login.php	/^		$msg='用户名密码不匹配!';$/;"	v
+p	login.php	/^	$p=$_POST['passwd'];$/;"	v
+remuser	login.php	/^	$remuser=isset($_COOKIE['remuser'])?$_COOKIE['remuser']:'';$/;"	v
+row	login.php	/^	$row=$user->checkUser($u,$p);$/;"	v
+u	login.php	/^	$u=$_POST['username'];$/;"	v
+user	login.php	/^	$user=new UserModel();$/;"	v
+ACC	logout.php	/^define('ACC',true);$/;"	d
+msg	logout.php	/^$msg='退出成功';$/;"	v
+CateModel	model\CateModel.class.php	/^class CateModel extends Model{$/;"	c
+GetCatTree	model\CateModel.class.php	/^	public function GetCatTree($arr,$id=0,$lev=0){$/;"	f
+add	model\CateModel.class.php	/^	public function add($data){$/;"	f
+cats	model\CateModel.class.php	/^		$cats=$this->select();$/;"	v
+delete	model\CateModel.class.php	/^	public function delete($cat_id){$/;"	f
+find	model\CateModel.class.php	/^	public function find($cat_id){$/;"	f
+getSon	model\CateModel.class.php	/^	public function getSon($id){$/;"	f
+getTree	model\CateModel.class.php	/^	public function getTree($id=0){$/;"	f
+id	model\CateModel.class.php	/^					$id=$v['parent_id'];$/;"	v
+k	model\CateModel.class.php	/^		foreach($arr as $k=>$v){$/;"	v
+select	model\CateModel.class.php	/^	public function select(){$/;"	f
+sql	model\CateModel.class.php	/^		$sql="delete from $this->table where cat_id=$cat_id";$/;"	v
+sql	model\CateModel.class.php	/^		$sql="select * from $this->table where cat_id=$cat_id";$/;"	v
+sql	model\CateModel.class.php	/^		$sql="select cat_id,cat_name,parent_id from $this->table where parent_id=$id";$/;"	v
+table	model\CateModel.class.php	/^	protected $table='category';$/;"	v
+tree	model\CateModel.class.php	/^				$tree=array_merge($tree,$this->getCatTree($arr,$v['cat_id'],$lev+1));$/;"	v
+tree	model\CateModel.class.php	/^		$tree=array();$/;"	v
+update	model\CateModel.class.php	/^	public function update($data,$cat_id=0){$/;"	f
+GoodsModel	model\GoodsModel.class.php	/^class GoodsModel extends Model{$/;"	c
+_auto	model\GoodsModel.class.php	/^	protected $_auto=array($/;"	v
+_valid	model\GoodsModel.class.php	/^	protected $_valid=array($/;"	v
+catGoods	model\GoodsModel.class.php	/^	public function catGoods($cat_id){$/;"	f
+category	model\GoodsModel.class.php	/^		$category= new CateModel();$/;"	v
+cats	model\GoodsModel.class.php	/^		$cats=$category->select();	\/\/取出所有栏目$/;"	v
+createSn	model\GoodsModel.class.php	/^	public function createSn(){$/;"	f
+fields	model\GoodsModel.class.php	/^	protected $fields=array('goods_id','goods_sn','cat_id',$/;"	v
+getCartGoods	model\GoodsModel.class.php	/^	public function getCartGoods($items){$/;"	f
+getGoods	model\GoodsModel.class.php	/^	public function getGoods(){$/;"	f
+getNew	model\GoodsModel.class.php	/^	public function getNew($n=5){$/;"	f
+getTrash	model\GoodsModel.class.php	/^	public function getTrash(){$/;"	f
+in	model\GoodsModel.class.php	/^		$in=implode(',',$sub);$/;"	v
+k	model\GoodsModel.class.php	/^			foreach ($sons as $k => $v){$/;"	v
+k	model\GoodsModel.class.php	/^		foreach($items as $k=>$v){		\/\/循环购物车中的商品，每循环一个，到数据查一下对应的详细信息$/;"	v
+pk	model\GoodsModel.class.php	/^	protected $pk='goods_id';$/;"	v
+row	model\GoodsModel.class.php	/^			$row=$this->db->getRow($sql);$/;"	v
+sn	model\GoodsModel.class.php	/^		$sn='BL'.date('Ymd').mt_rand(10000,99999);$/;"	v
+sons	model\GoodsModel.class.php	/^		$sons=$category->GetCatTree($cats,$cat_id);	\/\/取出给定栏目的子孙栏目$/;"	v
+sql	model\GoodsModel.class.php	/^			$sql="select goods_id,goods_name,thumb_img,shop_price,market_price from {$this->table} where goods_id ='{$k}'";$/;"	v
+sql	model\GoodsModel.class.php	/^		$sql="select * from $this->table where is_delete=0";$/;"	v
+sql	model\GoodsModel.class.php	/^		$sql="select * from $this->table where is_delete=1";$/;"	v
+sql	model\GoodsModel.class.php	/^		$sql="select count(*) from $this->table where goods_sn='$sn'";$/;"	v
+sql	model\GoodsModel.class.php	/^		$sql="select goods_id,goods_name,shop_price,thumb_img,market_price from {$this->table} order by add_time limit {$n}";$/;"	v
+sql	model\GoodsModel.class.php	/^		$sql="select goods_id,goods_name,shop_price,thumb_img,market_price from {$this->table} where cat_id in ({$in}) order by add_time limit 5";$/;"	v
+sub	model\GoodsModel.class.php	/^		$sub=array($cat_id);$/;"	v
+table	model\GoodsModel.class.php	/^	protected $table="goods";$/;"	v
+trash	model\GoodsModel.class.php	/^	public function trash($id){$/;"	f
+Model	model\Model.class.php	/^class Model{$/;"	c
+__construct	model\Model.class.php	/^	public function __construct(){$/;"	f
+_auto	model\Model.class.php	/^	protected $_auto=array();$/;"	v
+_autoFill	model\Model.class.php	/^	public function _autoFill($data){$/;"	f
+_facade	model\Model.class.php	/^	public function _facade($array=array()){$/;"	f
+_valid	model\Model.class.php	/^	protected $_valid=array();$/;"	v
+_valid	model\Model.class.php	/^	格式	$this->_valid=array($/;"	v
+_validate	model\Model.class.php	/^	public function _validate($data){$/;"	f
+add	model\Model.class.php	/^	public function add($data){$/;"	f
+check	model\Model.class.php	/^	protected function check($value,$rule='',$param=''){$/;"	f
+data	model\Model.class.php	/^		$data=array();$/;"	v
+db	model\Model.class.php	/^		$this->db=mysql::getIns();$/;"	v
+db	model\Model.class.php	/^	protected $db=NULL;$/;"	v
+delete	model\Model.class.php	/^	public function delete($id){$/;"	f
+error	model\Model.class.php	/^		$this->error=array();$/;"	v
+error	model\Model.class.php	/^	protected $error=array();$/;"	v
+fields	model\Model.class.php	/^	protected $fields=array();$/;"	v
+find	model\Model.class.php	/^	public function find($id){$/;"	f
+getErr	model\Model.class.php	/^	public function getErr(){$/;"	f
+k	model\Model.class.php	/^		foreach($array as $k=>$v){$/;"	v
+k	model\Model.class.php	/^		foreach($this->_auto as $k=>$v){$/;"	v
+k	model\Model.class.php	/^		foreach($this->_valid as $k=>$v){$/;"	v
+pk	model\Model.class.php	/^	protected $pk='';$/;"	v
+rs	model\Model.class.php	/^		$rs=$this->db->autoExecute($this->table,$data,'update'," where $this->pk=$id");$/;"	v
+select	model\Model.class.php	/^	public function select(){$/;"	f
+sql	model\Model.class.php	/^		$sql="delete from $this->table where $this->pk=$id";$/;"	v
+sql	model\Model.class.php	/^		$sql="select * from $this->table where $this->pk=$id";$/;"	v
+sql	model\Model.class.php	/^		$sql="select * from $this->table";$/;"	v
+table	model\Model.class.php	/^		$this->table=$table;$/;"	v
+table	model\Model.class.php	/^	protected $table=NULL;$/;"	v
+table	model\Model.class.php	/^	public function table($table){$/;"	f
+tmp	model\Model.class.php	/^				$tmp=explode(',',$param);$/;"	v
+update	model\Model.class.php	/^	public function update($data,$id){$/;"	f
+UserModel	model\UserModel.class.php	/^class UserModel extends Model{$/;"	c
+_auto	model\UserModel.class.php	/^	protected $_auto=array($/;"	v
+_valid	model\UserModel.class.php	/^	protected $_valid=array($/;"	v
+checkUser	model\UserModel.class.php	/^	public function checkUser($username,$passwd=''){$/;"	f
+encPassword	model\UserModel.class.php	/^	protected function encPassword($p){$/;"	f
+fields	model\UserModel.class.php	/^	protected $fields=array('user_id','username','email','passwd','regtime','lastlogin');$/;"	v
+pk	model\UserModel.class.php	/^	protected $pk='user_id';$/;"	v
+reg	model\UserModel.class.php	/^	public function reg($data){$/;"	f
+row	model\UserModel.class.php	/^			$row=$this->db->getRow($sql);$/;"	v
+sql	model\UserModel.class.php	/^			$sql="select count(*) from {$this->table} where username='{$username}'";$/;"	v
+sql	model\UserModel.class.php	/^			$sql="select user_id,username,email,passwd from {$this->table} where username='{$username}'";$/;"	v
+table	model\UserModel.class.php	/^	protected $table='user';$/;"	v
+ACC	reg.php	/^define('ACC',true);$/;"	d
+ACC	regAct.php	/^define('ACC',true);$/;"	d
+data	regAct.php	/^$data=$user->_autoFill($data);	\/\/自动填充$/;"	v
+data	regAct.php	/^$data=$user->_facade($_POST); 	\/\/自动过滤$/;"	v
+msg	regAct.php	/^	$msg='用户已存在';$/;"	v
+msg	regAct.php	/^	$msg='用户注册失败';$/;"	v
+msg	regAct.php	/^	$msg='用户注册成功';$/;"	v
+msg	regAct.php	/^	$msg=implode(',',$user->getErr());$/;"	v
+user	regAct.php	/^$user= new UserModel();$/;"	v
+CartTool	tool\CartTool.class.php	/^class CartTool{$/;"	c
+__clone	tool\CartTool.class.php	/^	final protected function __clone(){$/;"	f
+__construct	tool\CartTool.class.php	/^	final protected function __construct(){$/;"	f
+addItem	tool\CartTool.class.php	/^	public function addItem($id,$name,$price,$num=1){$/;"	f
+all	tool\CartTool.class.php	/^	public function all(){$/;"	f
+cart	tool\CartTool.class.php	/^$cart=CartTool::getCart();$/;"	v
+clear	tool\CartTool.class.php	/^	public function clear(){$/;"	f
+decNum	tool\CartTool.class.php	/^	public function decNum($id,$num=1){$/;"	f
+delItem	tool\CartTool.class.php	/^	public function delItem($id){$/;"	f
+getCart	tool\CartTool.class.php	/^	public static function getCart(){$/;"	f
+getCnt	tool\CartTool.class.php	/^	public function getCnt(){$/;"	f
+getIns	tool\CartTool.class.php	/^	protected static function getIns(){$/;"	f
+getNum	tool\CartTool.class.php	/^	public function getNum(){$/;"	f
+getPrice	tool\CartTool.class.php	/^	public function getPrice(){$/;"	f
+hasItem	tool\CartTool.class.php	/^	public function hasItem($id){$/;"	f
+incNum	tool\CartTool.class.php	/^	public function incNum($id,$num=1){$/;"	f
+ins	tool\CartTool.class.php	/^	private static $ins= null;$/;"	v
+item	tool\CartTool.class.php	/^		$item=array();$/;"	v
+items	tool\CartTool.class.php	/^		$this->items=array();$/;"	v
+items	tool\CartTool.class.php	/^	private $items=array();$/;"	v
+modNum	tool\CartTool.class.php	/^	public function modNum($id,$num=1){$/;"	f
+price	tool\CartTool.class.php	/^		$price=0.0;$/;"	v
+sum	tool\CartTool.class.php	/^		$sum=0;$/;"	v
+ImageTool	tool\ImageTool.class.php	/^class ImageTool {$/;"	c
+calc	tool\ImageTool.class.php	/^        $calc = min($width\/$dinfo['width'], $height\/$dinfo['height']);$/;"	v
+captcha	tool\ImageTool.class.php	/^    public static function captcha($width=50,$height=25) {$/;"	f
+color	tool\ImageTool.class.php	/^            $color = imagecolorallocate($image, mt_rand(0, 125), mt_rand(0, 125), mt_rand(0, 125)) ;$/;"	v
+color1	tool\ImageTool.class.php	/^            $color1 =imagecolorallocate($image, mt_rand(100, 125), mt_rand(100, 125), mt_rand(100, 125));$/;"	v
+color2	tool\ImageTool.class.php	/^            $color2 =imagecolorallocate($image, mt_rand(100, 125), mt_rand(100, 125), mt_rand(100, 125));$/;"	v
+color3	tool\ImageTool.class.php	/^            $color3 =imagecolorallocate($image, mt_rand(100, 125), mt_rand(100, 125), mt_rand(100, 125));$/;"	v
+createfunc	tool\ImageTool.class.php	/^        $createfunc = 'image' . $dinfo['ext'];$/;"	v
+dfunc	tool\ImageTool.class.php	/^        $dfunc = 'imagecreatefrom' . $dinfo['ext'];$/;"	v
+dheight	tool\ImageTool.class.php	/^        $dheight = (int)$dinfo['height']*$calc;$/;"	v
+dim	tool\ImageTool.class.php	/^        $dim = $dfunc($dst);  \/\/ 创建待操作的画布$/;"	v
+dim	tool\ImageTool.class.php	/^        $dim = $dfunc($dst);$/;"	v
+dinfo	tool\ImageTool.class.php	/^        $dinfo = self::imageInfo($dst);$/;"	v
+dwidth	tool\ImageTool.class.php	/^        $dwidth = (int)$dinfo['width']*$calc;$/;"	v
+gray	tool\ImageTool.class.php	/^            $gray = imagecolorallocate($image, 200, 200, 200);$/;"	v
+image	tool\ImageTool.class.php	/^            $image = imagecreatetruecolor($width,$height) ;$/;"	v
+imageInfo	tool\ImageTool.class.php	/^    public static function imageInfo($image) {$/;"	f
+info	tool\ImageTool.class.php	/^        $info = getimagesize($image);$/;"	v
+paddingx	tool\ImageTool.class.php	/^        $paddingx = (int)($width - $dwidth) \/ 2;$/;"	v
+paddingy	tool\ImageTool.class.php	/^        $paddingy = (int)($height - $dheight) \/ 2;$/;"	v
+posx	tool\ImageTool.class.php	/^            $posx = $dinfo['width'] - $winfo['width'];$/;"	v
+posx	tool\ImageTool.class.php	/^            $posx = 0;$/;"	v
+posy	tool\ImageTool.class.php	/^            $posy = $dinfo['height'] - $winfo['height'];$/;"	v
+posy	tool\ImageTool.class.php	/^            $posy = 0;$/;"	v
+save	tool\ImageTool.class.php	/^            $save = $dst;$/;"	v
+text	tool\ImageTool.class.php	/^            $text = substr(str_shuffle('ABCDEFGHIJKMNPRSTUVWXYZabcdefghijkmnprstuvwxyz23456789'), 0,4) ;$/;"	v
+thumb	tool\ImageTool.class.php	/^    public static function thumb($dst,$save=NULL,$width=200,$height=200) {$/;"	f
+tim	tool\ImageTool.class.php	/^        $tim = imagecreatetruecolor($width,$height);$/;"	v
+water	tool\ImageTool.class.php	/^    public static function water($dst,$water,$save=NULL,$pos=2,$alpha=50) {$/;"	f
+wfunc	tool\ImageTool.class.php	/^        $wfunc = 'imagecreatefrom' . $winfo['ext'];$/;"	v
+white	tool\ImageTool.class.php	/^        $white = imagecolorallocate($tim,255,255,255);$/;"	v
+wim	tool\ImageTool.class.php	/^        $wim = $wfunc($water);  \/\/ 创建水印画布$/;"	v
+winfo	tool\ImageTool.class.php	/^        $winfo = self::imageInfo($water);$/;"	v
+UpTool	tool\UpTool.class.php	/^class UpTool {$/;"	c
+allowExt	tool\UpTool.class.php	/^        $this->allowExt = $exts;$/;"	v
+allowExt	tool\UpTool.class.php	/^    protected $allowExt = 'jpg,jpeg,gif,bmp,png';$/;"	v
+dir	tool\UpTool.class.php	/^        $dir = $dir . '\/' . $newname;$/;"	v
+dir	tool\UpTool.class.php	/^        $dir = $this->mk_dir();$/;"	v
+dir	tool\UpTool.class.php	/^        $dir = ROOT . 'data\/images\/' . date('Ym\/d');$/;"	v
+errno	tool\UpTool.class.php	/^            $this->errno = $f['error'];$/;"	v
+errno	tool\UpTool.class.php	/^            $this->errno = 11;$/;"	v
+errno	tool\UpTool.class.php	/^            $this->errno = 8;$/;"	v
+errno	tool\UpTool.class.php	/^            $this->errno = 9;$/;"	v
+errno	tool\UpTool.class.php	/^    protected $errno = 0; \/\/ 错误代码$/;"	v
+error	tool\UpTool.class.php	/^            $this->error = 10;$/;"	v
+error	tool\UpTool.class.php	/^    protected $error = array($/;"	v
+ext	tool\UpTool.class.php	/^        $ext = $this->getExt($f['name']);$/;"	v
+f	tool\UpTool.class.php	/^        $f = $_FILES[$key];$/;"	v
+getErr	tool\UpTool.class.php	/^    public function getErr() {$/;"	f
+getExt	tool\UpTool.class.php	/^    protected function getExt($file) {$/;"	f
+isAllowExt	tool\UpTool.class.php	/^    protected function isAllowExt($ext) {$/;"	f
+isAllowSize	tool\UpTool.class.php	/^    protected function isAllowSize($size) {$/;"	f
+maxSize	tool\UpTool.class.php	/^        $this->maxSize = $num;$/;"	v
+maxSize	tool\UpTool.class.php	/^    protected $maxSize = 1; \/\/1M,M为单位$/;"	v
+mk_dir	tool\UpTool.class.php	/^    protected function mk_dir() {$/;"	f
+newname	tool\UpTool.class.php	/^        $newname = $this->randName() . '.' . $ext;$/;"	v
+randName	tool\UpTool.class.php	/^    protected function randName($length = 6) {$/;"	f
+setExt	tool\UpTool.class.php	/^    public function setExt($exts) {$/;"	f
+setSize	tool\UpTool.class.php	/^    public function setSize($num) {$/;"	f
+str	tool\UpTool.class.php	/^        $str = 'abcdefghijkmnpqrstuvwxyz23456789';$/;"	v
+tmp	tool\UpTool.class.php	/^        $tmp = explode('.',$file);$/;"	v
+up	tool\UpTool.class.php	/^    public function up($key) {$/;"	f
+ACC	view\admin\templates\cateditAction.php	/^define('ACC',true);$/;"	d
+cat_id	view\admin\templates\cateditAction.php	/^$cat_id=$_POST['cat_id']+0;$/;"	v
+cate	view\admin\templates\cateditAction.php	/^$cate = new CateModel($data);$/;"	v
+data	view\admin\templates\cateditAction.php	/^$data=array();$/;"	v
+charea	view\admin\templates\goodsadd.html	/^function charea(a) {$/;"	f
+selectPage	view\front\lanmu.html	/^function selectPage(sel)$/;"	f
+2782	view\front\shangpin.html	/^  <a class="cattsel" onclick="changeAtt(this)" href="javascript:;" name="2782" title="[ ￥0.00元]">165\/84A<input type="radio" style="display:none" id="spec_value_2782" name="spec_213" value="2782" checked=""><\/a>$/;"	a
+2783	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2783" title="[ ￥0.00元]">165\/88B<input type="radio" style="display:none" id="spec_value_2783" name="spec_213" value="2783"><\/a>$/;"	a
+2784	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2784" title="[ ￥0.00元]">170\/88A<input type="radio" style="display:none" id="spec_value_2784" name="spec_213" value="2784"><\/a>$/;"	a
+2785	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2785" title="[ ￥0.00元]">170\/92B<input type="radio" style="display:none" id="spec_value_2785" name="spec_213" value="2785"><\/a>$/;"	a
+2786	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2786" title="[ ￥0.00元]">175\/92A<input type="radio" style="display:none" id="spec_value_2786" name="spec_213" value="2786"><\/a>$/;"	a
+2787	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2787" title="[ ￥0.00元]">175\/96B<input type="radio" style="display:none" id="spec_value_2787" name="spec_213" value="2787"><\/a>$/;"	a
+2788	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2788" title="[ ￥0.00元]">180\/96A<input type="radio" style="display:none" id="spec_value_2788" name="spec_213" value="2788"><\/a>$/;"	a
+2789	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2789" title="[ ￥0.00元]">180\/100B<input type="radio" style="display:none" id="spec_value_2789" name="spec_213" value="2789"><\/a>$/;"	a
+2790	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2790" title="[ ￥0.00元]">185\/100A<input type="radio" style="display:none" id="spec_value_2790" name="spec_213" value="2790"><\/a>$/;"	a
+2791	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2791" title="[ ￥0.00元]">185\/104B<input type="radio" style="display:none" id="spec_value_2791" name="spec_213" value="2791"><\/a>$/;"	a
+checkSearchForm	view\front\zhuce.html	/^		function checkSearchForm()$/;"	f
+sw_nav	view\front\zhuce.html	/^		function sw_nav(obj,tag)$/;"	f
+grow	�����̳̱ʼ�\��ܸĽ�r3-֮�ݹ�ת��01.html	/^function grow($age) {$/;"	f
+_addslashes	�����̳̱ʼ�\��ܸĽ�r3-֮�ݹ�ת��02.html	/^function _addslashes($arr) {$/;"	f
+familytree	�����̳̱ʼ�\���޼�����֮���Ҽ�����01.html	/^function familytree($arr,$id) {$/;"	f
+tree	�����̳̱ʼ�\���޼�����֮���Ҽ�����02.html	/^function tree($arr,$id) {$/;"	f
+findson	�����̳̱ʼ�\���޼�����֮����������01.html	/^function findson($arr,$id=0) {$/;"	f
+subtree	�����̳̱ʼ�\���޼�����֮����������01.html	/^function subtree($arr,$id=0,$lev=1) {$/;"	f
+st	�����̳̱ʼ�\���޼�����֮����������02.html	/^function st() {$/;"	f
+t	�����̳̱ʼ�\���޼�����֮����������02.html	/^function t() {$/;"	f
+subtree	�����̳̱ʼ�\�������Ҽ�����(�� �ֿ� ѡѧ)01.html	/^function subtree($arr,$parent=0) {$/;"	f
+category	�������ݿ�\bool.sql	/^create table category ($/;"	t
+category.cat_id	�������ݿ�\bool.sql	/^cat_id int auto_increment primary key,$/;"	F
+category.cat_name	�������ݿ�\bool.sql	/^cat_name varchar(20) not null default'',$/;"	F
+category.intro	�������ݿ�\bool.sql	/^intro varchar(100) not null default '',$/;"	F
+category.parent_id	�������ݿ�\bool.sql	/^parent_id int not null default 0$/;"	F
+user	�������ݿ�\bool.sql	/^create table user ($/;"	t
+user.email	�������ݿ�\bool.sql	/^email varchar(30) not null default '',$/;"	F
+user.lastlogin	�������ݿ�\bool.sql	/^lastlogin int unsigned not null default 0$/;"	F
+user.passwd	�������ݿ�\bool.sql	/^passwd char(32) not null default '',$/;"	F
+user.regtime	�������ݿ�\bool.sql	/^regtime int unsigned not null default 0,$/;"	F
+user.user_id	�������ݿ�\bool.sql	/^user_id int unsigned not null auto_increment primary key,$/;"	F
+user.username	�������ݿ�\bool.sql	/^username varchar(16) not null default '',$/;"	F
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
