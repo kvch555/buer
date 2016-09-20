@@ -99,5 +99,15 @@ if($act=='buy'){ //把商品加到购物车
 	$rate=round(($discount/$total)*100,2);
 
 	include(ROOT.'view/front/tijiao.html');
+}else if($act=='done'){
+	/*
+	订单入库，最重要一个环节
+
+	从表单读取送货地址，手机等信息
+	从购物车读取总价格信息，
+	写入orderinfo表
+	*/
+	print_r($_POST);exit;
+
 }
 ?>

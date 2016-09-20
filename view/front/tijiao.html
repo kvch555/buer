@@ -25,7 +25,7 @@
 <div class="block">  
 当前位置: <a href=".">首页</a> <code>&gt;</code> 购物流程 <div class="blank"></div>
   
-                  <form onsubmit="return checkConsignee(this)" id="theForm" name="theForm" method="post" action="flow.php">
+                  <form method="post" action="flow.php?act=done">
         <div class="flowBox">
 <h6><span>收货人信息</span></h6>
 <table width="100%" cellspacing="1" cellpadding="5" border="0" bgcolor="#dddddd" align="center">
@@ -33,12 +33,12 @@
   <tbody><tr>
     <td bgcolor="#ffffff">配送区域:</td>
     <td bgcolor="#ffffff" colspan="3">
-    <input type="text" name="address" />
+    <input type="text" name="zone"/>
     (必填) </td>
   </tr>
     <tr>
     <td bgcolor="#ffffff">收货人姓名:</td>
-    <td bgcolor="#ffffff"><input type="text" value="" id="consignee_0" class="inputBg" name="consignee">
+    <td bgcolor="#ffffff"><input type="text" value="" id="consignee_0" class="inputBg" name="reciver">
     (必填) </td>
     <td bgcolor="#ffffff">电子邮件地址:</td>
     <td bgcolor="#ffffff"><input type="text" value="" id="email_0" class="inputBg" name="email">
@@ -62,7 +62,7 @@
     
   <tr>
     <td bgcolor="#ffffff">标志建筑:</td>
-    <td bgcolor="#ffffff"><input type="text" value="" id="sign_building_0" class="inputBg" name="sign_building"></td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="sign_building_0" class="inputBg" name="building"></td>
     <td bgcolor="#ffffff">最佳送货时间:</td>
     <td bgcolor="#ffffff"><input type="text" value="" id="best_time_0" class="inputBg" name="best_time"></td>
   </tr>
@@ -156,7 +156,7 @@
   </tr>
 </tbody></table>
 </div>           <div align="center" style="margin:8px auto;">
-            <input type="image" src="./view/front/images/bnt_subOrder.gif">
+            <input type="submit" value="提交">
             <input type="hidden" value="done" name="step">
             </div>
     </div>
