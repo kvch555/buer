@@ -107,7 +107,25 @@ if($act=='buy'){ //把商品加到购物车
 	从购物车读取总价格信息，
 	写入orderinfo表
 	*/
-	print_r($_POST);exit;
+	$OI=new OIModel();
+	if(!$OI->_validate($_POST)){	//如果数据检验没通过，报错退出
+		$msg=implode(',',$OI->getErr());
+		include(ROOT.'view/front/msg.html');
+		exit;
+	}
 
+	//自动过滤
+	$data=$OI->_facade($_POST);
+
+	//自动填充
+	$data=$OI->_autoFill($data);
+
+	if(!$OI->add($data)){
+		$msg='下订单失败';
+		include(ROOT.'view/front/msg.html');
+		exit;
+	}
+
+	echo '订单写入成功';
 }
 ?>
