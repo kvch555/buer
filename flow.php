@@ -120,12 +120,50 @@ if($act=='buy'){ //把商品加到购物车
 	//自动填充
 	$data=$OI->_autoFill($data);
 
+	//写入总金额
+	$data['order_amount']=$cart->getPrice();
+
+	//写入用户名，从session读
+	$data['user_id']=isset($_SESSION['user_id'])?$_SESSION['user_id']:0;
+	$data['username']=isset($_SESSION['username'])?$_SESSION['username']:'匿名';
+
+	//写入订单号
+	$data['order_sn']=$OI->orderSn();
+	$order_sn=$data['order_sn'];
+
 	if(!$OI->add($data)){
 		$msg='下订单失败';
 		include(ROOT.'view/front/msg.html');
 		exit;
 	}
 
-	echo '订单写入成功';
+	//echo '订单写入成功';
+
+	/*
+	把订单的商品写入数据库
+	1个订单里有N个商品，我们可以循环写入ordergoods表
+	*/
+	$items=$cart->all(); //返回订单中所有的商品
+
+	foreach ($items as $k=>$v) {
+		/*og_id
+order_id
+order_sn
+goods_id
+goods_name
+goods_number
+shop_price
+subtotal*/
+		$data=array();
+		$data['order_sn']=$order_sn;
+		$data['goods_id']=$k;
+		$data['goods_name']=$v['name'];
+		$data['goods_number']=$v['num'];
+		$data['shop_price']=$v['price']*$v['num'];
+	}
+
+	//把商品的数量也要减少	
+
+	//清空购物车
 }
 ?>

@@ -66,18 +66,24 @@ goodslist	category.php	/^$goodslist=$goods->catGoods($cat_id);$/;"	v
 nav	category.php	/^$nav=$cat->getTree($cat_id);$/;"	v
 sort	category.php	/^$sort=$cat->GetCatTree($cats,0,1);$/;"	v
 ACC	flow.php	/^define('ACC',true);$/;"	d
+OI	flow.php	/^	$OI=new OIModel();$/;"	v
 act	flow.php	/^$act=isset($_GET['act'])?$_GET['act']:'buy';$/;"	v
 cart	flow.php	/^$cart=CartTool::getCart();	\/\/获取购物车实例$/;"	v
+data	flow.php	/^	$data=$OI->_autoFill($data);$/;"	v
+data	flow.php	/^	$data=$OI->_facade($_POST);$/;"	v
 discount	flow.php	/^	$discount=$market_total-$total;$/;"	v
 g	flow.php	/^		$g=$goods->find($goods_id);$/;"	v
 goods	flow.php	/^$goods=new GoodsModel();$/;"	v
 goods_id	flow.php	/^	$goods_id=isset($_GET['goods_id'])?$_GET['goods_id']+0:0;$/;"	v
 items	flow.php	/^			$items=$cart->all();$/;"	v
+items	flow.php	/^	$items=$cart->all();	\/\/取出购物车中的商品$/;"	v
 items	flow.php	/^	$items=$cart->all();$/;"	v
 items	flow.php	/^	$items=$goods->getCartGoods($items);$/;"	v
 market_total	flow.php	/^	$market_total=0.0;$/;"	v
 msg	flow.php	/^				$msg='库存不足';$/;"	v
 msg	flow.php	/^				$msg='此商品不能购买';$/;"	v
+msg	flow.php	/^		$msg='下订单失败';$/;"	v
+msg	flow.php	/^		$msg=implode(',',$OI->getErr());$/;"	v
 msg	flow.php	/^	$msg='购物车已清空';$/;"	v
 num	flow.php	/^	$num=isset($_GET['num'])?$_GET['num']+0:1;$/;"	v
 rate	flow.php	/^	$rate=round(($discount\/$total)*100,2);$/;"	v
@@ -251,6 +257,12 @@ table	model\Model.class.php	/^	protected $table=NULL;$/;"	v
 table	model\Model.class.php	/^	public function table($table){$/;"	f
 tmp	model\Model.class.php	/^				$tmp=explode(',',$param);$/;"	v
 update	model\Model.class.php	/^	public function update($data,$id){$/;"	f
+OIModel	model\OIModel.class.php	/^class OIModel extends Model{$/;"	c
+_auto	model\OIModel.class.php	/^	protected $_auto=array($/;"	v
+_valid	model\OIModel.class.php	/^	protected $_valid=array($/;"	v
+fields	model\OIModel.class.php	/^	protected $fields=array('order_id','order_sn','user_id','username','zone','address','zipcode','reciver','email','tel','mobile','building','best_time','add_time','order_amount','pay');$/;"	v
+pk	model\OIModel.class.php	/^	protected $pk='order_id';$/;"	v
+table	model\OIModel.class.php	/^	protected $table='orderinfo';$/;"	v
 UserModel	model\UserModel.class.php	/^class UserModel extends Model{$/;"	c
 _auto	model\UserModel.class.php	/^	protected $_auto=array($/;"	v
 _valid	model\UserModel.class.php	/^	protected $_valid=array($/;"	v
@@ -375,27 +387,6 @@ selectPage	view\front\lanmu.html	/^function selectPage(sel)$/;"	f
 2791	view\front\shangpin.html	/^  <a onclick="changeAtt(this)" href="javascript:;" name="2791" title="[ ￥0.00元]">185\/104B<input type="radio" style="display:none" id="spec_value_2791" name="spec_213" value="2791"><\/a>$/;"	a
 checkSearchForm	view\front\zhuce.html	/^		function checkSearchForm()$/;"	f
 sw_nav	view\front\zhuce.html	/^		function sw_nav(obj,tag)$/;"	f
-grow	�����̳̱ʼ�\��ܸĽ�r3-֮�ݹ�ת��01.html	/^function grow($age) {$/;"	f
-_addslashes	�����̳̱ʼ�\��ܸĽ�r3-֮�ݹ�ת��02.html	/^function _addslashes($arr) {$/;"	f
-familytree	�����̳̱ʼ�\���޼�����֮���Ҽ�����01.html	/^function familytree($arr,$id) {$/;"	f
-tree	�����̳̱ʼ�\���޼�����֮���Ҽ�����02.html	/^function tree($arr,$id) {$/;"	f
-findson	�����̳̱ʼ�\���޼�����֮����������01.html	/^function findson($arr,$id=0) {$/;"	f
-subtree	�����̳̱ʼ�\���޼�����֮����������01.html	/^function subtree($arr,$id=0,$lev=1) {$/;"	f
-st	�����̳̱ʼ�\���޼�����֮����������02.html	/^function st() {$/;"	f
-t	�����̳̱ʼ�\���޼�����֮����������02.html	/^function t() {$/;"	f
-subtree	�����̳̱ʼ�\�������Ҽ�����(�� �ֿ� ѡѧ)01.html	/^function subtree($arr,$parent=0) {$/;"	f
-category	�������ݿ�\bool.sql	/^create table category ($/;"	t
-category.cat_id	�������ݿ�\bool.sql	/^cat_id int auto_increment primary key,$/;"	F
-category.cat_name	�������ݿ�\bool.sql	/^cat_name varchar(20) not null default'',$/;"	F
-category.intro	�������ݿ�\bool.sql	/^intro varchar(100) not null default '',$/;"	F
-category.parent_id	�������ݿ�\bool.sql	/^parent_id int not null default 0$/;"	F
-user	�������ݿ�\bool.sql	/^create table user ($/;"	t
-user.email	�������ݿ�\bool.sql	/^email varchar(30) not null default '',$/;"	F
-user.lastlogin	�������ݿ�\bool.sql	/^lastlogin int unsigned not null default 0$/;"	F
-user.passwd	�������ݿ�\bool.sql	/^passwd char(32) not null default '',$/;"	F
-user.regtime	�������ݿ�\bool.sql	/^regtime int unsigned not null default 0,$/;"	F
-user.user_id	�������ݿ�\bool.sql	/^user_id int unsigned not null auto_increment primary key,$/;"	F
-user.username	�������ݿ�\bool.sql	/^username varchar(16) not null default '',$/;"	F
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_PROGRAM_VERSION	5.8	//

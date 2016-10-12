@@ -47,6 +47,8 @@ GoodsModel	.\model\GoodsModel.class.php	/^class GoodsModel extends Model{$/;"	c
 ImageTool	.\tool\ImageTool.class.php	/^class ImageTool {$/;"	c
 Log	.\include\log.class.php	/^class Log {$/;"	c
 Model	.\model\Model.class.php	/^class Model{$/;"	c
+OI	.\flow.php	/^	$OI=new OIModel();$/;"	v
+OIModel	.\model\OIModel.class.php	/^class OIModel extends Model{$/;"	c
 ROOT	.\include\init.php	/^define('ROOT',str_replace('\\\\','\/',dirname(dirname(__FILE__))) . '\/');$/;"	d
 UpTool	.\tool\UpTool.class.php	/^class UpTool {$/;"	c
 UserModel	.\model\UserModel.class.php	/^class UserModel extends Model{$/;"	c
@@ -66,15 +68,16 @@ __destruct	.\include\mysql.class.php	/^    public function __destruct() {$/;"	f
 __get	.\include\conf.class.php	/^    public function __get($key) {$/;"	f
 __set	.\include\conf.class.php	/^    public function __set($key,$value) {$/;"	f
 _addslashes	.\include\lib_base.php	/^function _addslashes($arr) {$/;"	f
-_addslashes	.\µ¥¶À½Ì³Ì±Ê¼Ç\¿ò¼Ü¸Ä½ør3-Ö®µİ¹é×ªÒå02.html	/^function _addslashes($arr) {$/;"	f
 _auto	.\model\GoodsModel.class.php	/^	protected $_auto=array($/;"	v
 _auto	.\model\Model.class.php	/^	protected $_auto=array();$/;"	v
+_auto	.\model\OIModel.class.php	/^	protected $_auto=array($/;"	v
 _auto	.\model\UserModel.class.php	/^	protected $_auto=array($/;"	v
 _autoFill	.\model\Model.class.php	/^	public function _autoFill($data){$/;"	f
 _facade	.\model\Model.class.php	/^	public function _facade($array=array()){$/;"	f
 _valid	.\model\GoodsModel.class.php	/^	protected $_valid=array($/;"	v
 _valid	.\model\Model.class.php	/^	protected $_valid=array();$/;"	v
 _valid	.\model\Model.class.php	/^	æ ¼å¼	$this->_valid=array($/;"	v
+_valid	.\model\OIModel.class.php	/^	protected $_valid=array($/;"	v
 _valid	.\model\UserModel.class.php	/^	protected $_valid=array($/;"	v
 _validate	.\model\Model.class.php	/^	public function _validate($data){$/;"	f
 act	.\flow.php	/^$act=isset($_GET['act'])?$_GET['act']:'buy';$/;"	v
@@ -111,11 +114,6 @@ cate	.\admin\goodsadd.php	/^$cate=new CateModel();$/;"	v
 cate	.\view\admin\templates\cateditAction.php	/^$cate = new CateModel($data);$/;"	v
 category	.\category.php	/^$category=$cat->find($cat_id);$/;"	v
 category	.\model\GoodsModel.class.php	/^		$category= new CateModel();$/;"	v
-category	.\²âÊÔÊı¾İ¿â\bool.sql	/^create table category ($/;"	t
-category.cat_id	.\²âÊÔÊı¾İ¿â\bool.sql	/^cat_id int auto_increment primary key,$/;"	F
-category.cat_name	.\²âÊÔÊı¾İ¿â\bool.sql	/^cat_name varchar(20) not null default'',$/;"	F
-category.intro	.\²âÊÔÊı¾İ¿â\bool.sql	/^intro varchar(100) not null default '',$/;"	F
-category.parent_id	.\²âÊÔÊı¾İ¿â\bool.sql	/^parent_id int not null default 0$/;"	F
 cats	.\category.php	/^$cats=$cat->select();$/;"	v
 cats	.\model\CateModel.class.php	/^		$cats=$this->select();$/;"	v
 cats	.\model\GoodsModel.class.php	/^		$cats=$category->select();	\/\/å–å‡ºæ‰€æœ‰æ ç›®$/;"	v
@@ -143,6 +141,8 @@ data	.\admin\cateditAction.php	/^$data=array();$/;"	v
 data	.\admin\goodsaddAction.php	/^$data=$goods->_autoFill($data);		\/\/è‡ªåŠ¨å¡«å……$/;"	v
 data	.\admin\goodsaddAction.php	/^$data=$goods->_facade($_POST); 		\/\/è‡ªåŠ¨è¿‡æ»¤$/;"	v
 data	.\admin\goodsaddAction.php	/^$data=array();$/;"	v
+data	.\flow.php	/^	$data=$OI->_autoFill($data);$/;"	v
+data	.\flow.php	/^	$data=$OI->_facade($_POST);$/;"	v
 data	.\include\conf.class.php	/^        $this->data = $_CFG;$/;"	v
 data	.\include\conf.class.php	/^    protected $data = array();$/;"	v
 data	.\model\Model.class.php	/^		$data=array();$/;"	v
@@ -180,16 +180,15 @@ error	.\tool\UpTool.class.php	/^            $this->error = 10;$/;"	v
 error	.\tool\UpTool.class.php	/^    protected $error = array($/;"	v
 ext	.\tool\UpTool.class.php	/^        $ext = $this->getExt($f['name']);$/;"	v
 f	.\tool\UpTool.class.php	/^        $f = $_FILES[$key];$/;"	v
-familytree	.\µ¥¶À½Ì³Ì±Ê¼Ç\ÎŞÏŞ¼¶·ÖÀàÖ®²éÕÒ¼ÒÆ×Ê÷01.html	/^function familytree($arr,$id) {$/;"	f
 fe_list	.\index.php	/^$fe_list=$goods->catGoods($female_id);$/;"	v
 female_id	.\index.php	/^$female_id=4;$/;"	v
 fh	.\include\log.class.php	/^        $fh = fopen($log,'ab');$/;"	v
 fields	.\model\GoodsModel.class.php	/^	protected $fields=array('goods_id','goods_sn','cat_id',$/;"	v
 fields	.\model\Model.class.php	/^	protected $fields=array();$/;"	v
+fields	.\model\OIModel.class.php	/^	protected $fields=array('order_id','order_sn','user_id','username','zone','address','zipcode','reciver','email','tel','mobile','building','best_time','add_time','order_amount','pay');$/;"	v
 fields	.\model\UserModel.class.php	/^	protected $fields=array('user_id','username','email','passwd','regtime','lastlogin');$/;"	v
 find	.\model\CateModel.class.php	/^	public function find($cat_id){$/;"	f
 find	.\model\Model.class.php	/^	public function find($id){$/;"	f
-findson	.\µ¥¶À½Ì³Ì±Ê¼Ç\ÎŞÏŞ¼¶·ÖÀàÖ®²éÕÒ×ÓËïÊ÷01.html	/^function findson($arr,$id=0) {$/;"	f
 flag	.\admin\cateditAction.php	/^		$flag=false;$/;"	v
 flag	.\admin\cateditAction.php	/^$flag=true;$/;"	v
 g	.\admin\goods.php	/^$g=$goods->find($goods_id);$/;"	v
@@ -234,7 +233,6 @@ goods_id	.\goods.php	/^$goods_id=isset($_GET['goods_id'])?$_GET['goods_id']+0:0;
 goods_img	.\admin\goodsaddAction.php	/^$goods_img=dirname($ori_img).'\/goods_'.basename($ori_img);$/;"	v
 goodslist	.\category.php	/^$goodslist=$goods->catGoods($cat_id);$/;"	v
 gray	.\tool\ImageTool.class.php	/^            $gray = imagecolorallocate($image, 200, 200, 200);$/;"	v
-grow	.\µ¥¶À½Ì³Ì±Ê¼Ç\¿ò¼Ü¸Ä½ør3-Ö®µİ¹é×ªÒå01.html	/^function grow($age) {$/;"	f
 hasItem	.\tool\CartTool.class.php	/^	public function hasItem($id){$/;"	f
 id	.\model\CateModel.class.php	/^					$id=$v['parent_id'];$/;"	v
 image	.\tool\ImageTool.class.php	/^            $image = imagecreatetruecolor($width,$height) ;$/;"	v
@@ -251,6 +249,7 @@ isAllowSize	.\tool\UpTool.class.php	/^    protected function isAllowSize($size) 
 isBak	.\include\log.class.php	/^    public static function isBak() {$/;"	f
 item	.\tool\CartTool.class.php	/^		$item=array();$/;"	v
 items	.\flow.php	/^			$items=$cart->all();$/;"	v
+items	.\flow.php	/^	$items=$cart->all();	\/\/å–å‡ºè´­ç‰©è½¦ä¸­çš„å•†å“$/;"	v
 items	.\flow.php	/^	$items=$cart->all();$/;"	v
 items	.\flow.php	/^	$items=$goods->getCartGoods($items);$/;"	v
 items	.\tool\CartTool.class.php	/^		$this->items=array();$/;"	v
@@ -273,6 +272,8 @@ mk_dir	.\tool\UpTool.class.php	/^    protected function mk_dir() {$/;"	f
 modNum	.\tool\CartTool.class.php	/^	public function modNum($id,$num=1){$/;"	f
 msg	.\flow.php	/^				$msg='åº“å­˜ä¸è¶³';$/;"	v
 msg	.\flow.php	/^				$msg='æ­¤å•†å“ä¸èƒ½è´­ä¹°';$/;"	v
+msg	.\flow.php	/^		$msg='ä¸‹è®¢å•å¤±è´¥';$/;"	v
+msg	.\flow.php	/^		$msg=implode(',',$OI->getErr());$/;"	v
 msg	.\flow.php	/^	$msg='è´­ç‰©è½¦å·²æ¸…ç©º';$/;"	v
 msg	.\login.php	/^		$msg="ç™»é™†æˆåŠŸ";$/;"	v
 msg	.\login.php	/^		$msg='ç”¨æˆ·åå¯†ç ä¸åŒ¹é…!';$/;"	v
@@ -295,6 +296,7 @@ paddingx	.\tool\ImageTool.class.php	/^        $paddingx = (int)($width - $dwidth
 paddingy	.\tool\ImageTool.class.php	/^        $paddingy = (int)($height - $dheight) \/ 2;$/;"	v
 pk	.\model\GoodsModel.class.php	/^	protected $pk='goods_id';$/;"	v
 pk	.\model\Model.class.php	/^	protected $pk='';$/;"	v
+pk	.\model\OIModel.class.php	/^	protected $pk='order_id';$/;"	v
 pk	.\model\UserModel.class.php	/^	protected $pk='user_id';$/;"	v
 posx	.\tool\ImageTool.class.php	/^            $posx = $dinfo['width'] - $winfo['width'];$/;"	v
 posx	.\tool\ImageTool.class.php	/^            $posx = 0;$/;"	v
@@ -355,20 +357,17 @@ sql	.\model\Model.class.php	/^		$sql="select * from $this->table where $this->pk
 sql	.\model\Model.class.php	/^		$sql="select * from $this->table";$/;"	v
 sql	.\model\UserModel.class.php	/^			$sql="select count(*) from {$this->table} where username='{$username}'";$/;"	v
 sql	.\model\UserModel.class.php	/^			$sql="select user_id,username,email,passwd from {$this->table} where username='{$username}'";$/;"	v
-st	.\µ¥¶À½Ì³Ì±Ê¼Ç\ÎŞÏŞ¼¶·ÖÀàÖ®²éÕÒ×ÓËïÊ÷02.html	/^function st() {$/;"	f
 str	.\include\lib_base.php	/^        $str=mb_substr($str,0,$len,'UTF8').".....";$/;"	v
 str	.\tool\UpTool.class.php	/^        $str = 'abcdefghijkmnpqrstuvwxyz23456789';$/;"	v
 sub	.\model\GoodsModel.class.php	/^		$sub=array($cat_id);$/;"	v
-subtree	.\µ¥¶À½Ì³Ì±Ê¼Ç\µü´ú²éÕÒ¼ÒÆ×Ê÷(ÄÑ ´Ö¿Ú Ñ¡Ñ§)01.html	/^function subtree($arr,$parent=0) {$/;"	f
-subtree	.\µ¥¶À½Ì³Ì±Ê¼Ç\ÎŞÏŞ¼¶·ÖÀàÖ®²éÕÒ×ÓËïÊ÷01.html	/^function subtree($arr,$id=0,$lev=1) {$/;"	f
 sum	.\tool\CartTool.class.php	/^		$sum=0;$/;"	v
 sw_nav	.\view\front\zhuce.html	/^		function sw_nav(obj,tag)$/;"	f
-t	.\µ¥¶À½Ì³Ì±Ê¼Ç\ÎŞÏŞ¼¶·ÖÀàÖ®²éÕÒ×ÓËïÊ÷02.html	/^function t() {$/;"	f
 table	.\model\CateModel.class.php	/^	protected $table='category';$/;"	v
 table	.\model\GoodsModel.class.php	/^	protected $table="goods";$/;"	v
 table	.\model\Model.class.php	/^		$this->table=$table;$/;"	v
 table	.\model\Model.class.php	/^	protected $table=NULL;$/;"	v
 table	.\model\Model.class.php	/^	public function table($table){$/;"	f
+table	.\model\OIModel.class.php	/^	protected $table='orderinfo';$/;"	v
 table	.\model\UserModel.class.php	/^	protected $table='user';$/;"	v
 text	.\tool\ImageTool.class.php	/^            $text = substr(str_shuffle('ABCDEFGHIJKMNPRSTUVWXYZabcdefghijkmnprstuvwxyz23456789'), 0,4) ;$/;"	v
 thumb	.\tool\ImageTool.class.php	/^    public static function thumb($dst,$save=NULL,$width=200,$height=200) {$/;"	f
@@ -381,7 +380,6 @@ trash	.\model\GoodsModel.class.php	/^	public function trash($id){$/;"	f
 tree	.\admin\cateditAction.php	/^$tree=$cate->getTree($data['parent_id']);$/;"	v
 tree	.\model\CateModel.class.php	/^				$tree=array_merge($tree,$this->getCatTree($arr,$v['cat_id'],$lev+1));$/;"	v
 tree	.\model\CateModel.class.php	/^		$tree=array();$/;"	v
-tree	.\µ¥¶À½Ì³Ì±Ê¼Ç\ÎŞÏŞ¼¶·ÖÀàÖ®²éÕÒ¼ÒÆ×Ê÷02.html	/^function tree($arr,$id) {$/;"	f
 u	.\login.php	/^	$u=$_POST['username'];$/;"	v
 up	.\tool\UpTool.class.php	/^    public function up($key) {$/;"	f
 update	.\model\CateModel.class.php	/^	public function update($data,$cat_id=0){$/;"	f
@@ -389,13 +387,6 @@ update	.\model\Model.class.php	/^	public function update($data,$id){$/;"	f
 uptool	.\admin\goodsaddAction.php	/^$uptool=new UpTool();$/;"	v
 user	.\login.php	/^	$user=new UserModel();$/;"	v
 user	.\regAct.php	/^$user= new UserModel();$/;"	v
-user	.\²âÊÔÊı¾İ¿â\bool.sql	/^create table user ($/;"	t
-user.email	.\²âÊÔÊı¾İ¿â\bool.sql	/^email varchar(30) not null default '',$/;"	F
-user.lastlogin	.\²âÊÔÊı¾İ¿â\bool.sql	/^lastlogin int unsigned not null default 0$/;"	F
-user.passwd	.\²âÊÔÊı¾İ¿â\bool.sql	/^passwd char(32) not null default '',$/;"	F
-user.regtime	.\²âÊÔÊı¾İ¿â\bool.sql	/^regtime int unsigned not null default 0,$/;"	F
-user.user_id	.\²âÊÔÊı¾İ¿â\bool.sql	/^user_id int unsigned not null auto_increment primary key,$/;"	F
-user.username	.\²âÊÔÊı¾İ¿â\bool.sql	/^username varchar(16) not null default '',$/;"	F
 water	.\tool\ImageTool.class.php	/^    public static function water($dst,$water,$save=NULL,$pos=2,$alpha=50) {$/;"	f
 wfunc	.\tool\ImageTool.class.php	/^        $wfunc = 'imagecreatefrom' . $winfo['ext'];$/;"	v
 white	.\tool\ImageTool.class.php	/^        $white = imagecolorallocate($tim,255,255,255);$/;"	v

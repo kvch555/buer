@@ -16,6 +16,11 @@ class OIModel extends Model{
 						array('pay',1,'必须先支付方式','in','4,5')  //代表在线支付与到付
 						);
 
+	public function OrderSn(){
+		$sn='OI'.date('Ymd').mt_rand(10000,99999);
+		$sql="select count(*) from {$this->table} where order_sn='{$sn}'";
+		return $this->db->getOne($sql)?$this->orderSn():$sn;
+	}
 }
 
 

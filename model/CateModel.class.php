@@ -2,8 +2,8 @@
 class CateModel extends Model{
 
 	protected $table='category';
-
-	public function add($data){
+	protected $pk='cat_id';
+	/*public function add($data){
 		return $this->db->autoExecute($this->table,$data);
 	}
 
@@ -14,7 +14,7 @@ class CateModel extends Model{
 	public function find($cat_id){
 		$sql="select * from $this->table where cat_id=$cat_id";
 		return $this->db->getRow($sql);
-	}
+	}*/
 
 	/*getCatTree
 	parm:array $arr,int $id
@@ -58,7 +58,7 @@ class CateModel extends Model{
 		return array_reverse($tree);
 	}
 
-	public function delete($cat_id){
+	/*public function delete($cat_id){
 		$sql="delete from $this->table where cat_id=$cat_id";
 		$this->db->query($sql);
 		return $this->db->affected_rows();
@@ -67,6 +67,6 @@ class CateModel extends Model{
 	public function update($data,$cat_id=0){
 		$this->db->autoExecute($this->table,$data,'update'," where cat_id=$cat_id");
 		return $this->db->affected_rows();
-	} 
+	} */
 }
 ?>
