@@ -137,6 +137,9 @@ if($act=='buy'){ //把商品加到购物车
 		exit;
 	}
 
+	//获取刚刚产生的order_id的值
+	$order_id=$OI->insert_id();
+
 	//echo '订单写入成功';
 
 	/*
@@ -145,25 +148,30 @@ if($act=='buy'){ //把商品加到购物车
 	*/
 	$items=$cart->all(); //返回订单中所有的商品
 
+	$OG=new OGModel();	//获取ordergoods的操作model
+
 	foreach ($items as $k=>$v) {
-		/*og_id
-order_id
-order_sn
-goods_id
-goods_name
-goods_number
-shop_price
-subtotal*/
 		$data=array();
+
+		$cnt=0;
+
 		$data['order_sn']=$order_sn;
+		$data['order_id']=$order_id;
 		$data['goods_id']=$k;
 		$data['goods_name']=$v['name'];
 		$data['goods_number']=$v['num'];
-		$data['shop_price']=$v['price']*$v['num'];
+		$data['shop_price']=$v['price'];
+		$data['subtotal']=$v['price']*$v['num'];
+		
+		if($OG->addOG($data)){
+			$cnt += 1;  //插入一条og成功，$cnt+1
+			//因为，1个订单有N条商品，必须N条商品，都插入成功，才算订单插入成功！
+		}
 	}
+	
+	if(count($item)!==$cnt){	//购物车里的商品数量，并没有全部入库成功
+		//撤销此订单
 
-	//把商品的数量也要减少	
-
-	//清空购物车
+	}
 }
 ?>

@@ -185,5 +185,9 @@ class Model{
 		return $this->error;
 	}
 
+	public function insert_id(){
+		return $this->db->insert_id();
+	}
+
 }
 ?>

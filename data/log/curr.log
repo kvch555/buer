@@ -3491,3 +3491,120 @@ set names utf8
 select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='2'
 use bool
 set names utf8
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=2
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=2
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='2'
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='test333'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='test333'
+use bool
+set names utf8
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=3
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=5
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=5
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016101448659'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('测试','哈哈','185944345@qq.com','测试','','','','','','4','1476433068','1689','1','test333','OI2016101448659')
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016101450548'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('测试','哈哈','185944345@qq.com','测试','','','','','','4','1476433186','1689','1','test333','OI2016101450548')
