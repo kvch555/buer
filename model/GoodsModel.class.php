@@ -62,7 +62,7 @@ class GoodsModel extends Model{
 	找出$cat_id的所有子孙栏目，
 	查所有$cat_id及其子孙栏目下的商品	
 	*/
-	public function catGoods($cat_id){
+	public function catGoods($cat_id,$offset=0,$limit=5){
 		$category= new CateModel();
 		$cats=$category->select();	//取出所有栏目
 		$sons=$category->GetCatTree($cats,$cat_id);	//取出给定栏目的子孙栏目
@@ -77,7 +77,7 @@ class GoodsModel extends Model{
 
 		$in=implode(',',$sub);
 
-		$sql="select goods_id,goods_name,shop_price,thumb_img,market_price from {$this->table} where cat_id in ({$in}) order by add_time limit 5";
+		$sql="select goods_id,goods_name,shop_price,thumb_img,market_price from {$this->table} where cat_id in ({$in}) order by add_time limit {$offset},{$limit}";
 		
 		return $this->db->getAll($sql);
 	}
