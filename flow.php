@@ -146,15 +146,13 @@ if($act=='buy'){ //把商品加到购物车
 	把订单的商品写入数据库
 	1个订单里有N个商品，我们可以循环写入ordergoods表
 	*/
+	$total=$cart->getPrice();
 	$items=$cart->all(); //返回订单中所有的商品
-
+	
 	$OG=new OGModel();	//获取ordergoods的操作model
-
+	$cnt=0;	//用来记录插入ordergoods成功的次数
 	foreach ($items as $k=>$v) {
 		$data=array();
-
-		$cnt=0;
-
 		$data['order_sn']=$order_sn;
 		$data['order_id']=$order_id;
 		$data['goods_id']=$k;
@@ -169,9 +167,17 @@ if($act=='buy'){ //把商品加到购物车
 		}
 	}
 	
-	if(count($item)!==$cnt){	//购物车里的商品数量，并没有全部入库成功
+	if(count($items)!==$cnt){	//购物车里的商品数量，并没有全部入库成功
 		//撤销此订单
-
+		$OI->invoke($order_id); 
+		$msg='下订单失败';
+		include(ROOT.'view/front/msg.html');
+		exit;
 	}
+
+	//下订单成功
+	//清空购物车
+	$cart->clear();
+	include(ROOT.'view/front/order.html');
 }
 ?>

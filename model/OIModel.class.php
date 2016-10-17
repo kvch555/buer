@@ -21,6 +21,13 @@ class OIModel extends Model{
 		$sql="select count(*) from {$this->table} where order_sn='{$sn}'";
 		return $this->db->getOne($sql)?$this->orderSn():$sn;
 	}
+
+	public function invoke($order_id){
+		$this->delete($order_id); //先删掉订单
+
+		$sql="delete from order_go ods where order_id={$order_id}"; //再删掉订单对应的商品
+		return $this->db->query($sql);
+	}
 }
 
 

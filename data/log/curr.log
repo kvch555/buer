@@ -3608,3 +3608,264 @@ use bool
 set names utf8
 select count(*) from orderinfo where order_sn='OI2016101450548'
 insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('测试','哈哈','185944345@qq.com','测试','','','','','','4','1476433186','1689','1','test333','OI2016101450548')
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='test333'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='test333'
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=4
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select * from goods where goods_id=4
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=5
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=5
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select * from goods where goods_id=5
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=5
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016101761600'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('测试','测试','185944345@qq.com','测试','','','','','','4','1476674170','2286','1','test333','OI2016101761600')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101761600','7','3','两扣平驳领棕色格纹男士休闲单西D6959','1','1490.00','1490')
+update goods set goods_number=goods_number-1 where goods_id=3
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101761600','7','4','蓝黑竖条纹男士休闲衬衫','2','199.00','398')
+update goods set goods_number=goods_number-2 where goods_id=4
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101761600','7','5','蓝底提花咖色竖条纹修身正装衬衫','2','199.00','398')
+update goods set goods_number=goods_number-2 where goods_id=5
+delete from orderinfo where order_id=7
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016101736526'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('test','test','185944345@qq.com','test','','','','','','4','1476674324','2286','1','test333','OI2016101736526')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101736526','8','3','两扣平驳领棕色格纹男士休闲单西D6959','1','1490.00','1490')
+update goods set goods_number=goods_number-1 where goods_id=3
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101736526','8','4','蓝黑竖条纹男士休闲衬衫','2','199.00','398')
+update goods set goods_number=goods_number-2 where goods_id=4
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101736526','8','5','蓝底提花咖色竖条纹修身正装衬衫','2','199.00','398')
+update goods set goods_number=goods_number-2 where goods_id=5
+use bool
+set names utf8
+use bool
+set names utf8
+use bool
+set names utf8
+use bool
+set names utf8
+select * from goods where goods_id=5
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select * from goods where goods_id=5
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=5
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+use bool
+set names utf8
+select * from goods where goods_id=5
+select * from category
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=4
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=5
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=5
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select * from goods where goods_id=5
+select * from category
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=3
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='5'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016101727057'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('test','test','185944345@qq.com','test','','','','','','4','1476674558','2286','1','test333','OI2016101727057')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101727057','9','5','蓝底提花咖色竖条纹修身正装衬衫','3','199.00','597')
+update goods set goods_number=goods_number-3 where goods_id=5
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101727057','9','4','蓝黑竖条纹男士休闲衬衫','1','199.00','199')
+update goods set goods_number=goods_number-1 where goods_id=4
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101727057','9','3','两扣平驳领棕色格纹男士休闲单西D6959','1','1490.00','1490')
+update goods set goods_number=goods_number-1 where goods_id=3
+use bool
+set names utf8
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select * from goods where goods_id=3
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
+use bool
+set names utf8
+select * from goods where goods_id=2
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=2
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='2'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='3'
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='2'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016101720536'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('haha','haha','185944345@qq.com','haha','','','','','','4','1476674766','6959','1','test333','OI2016101720536')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101720536','10','3','两扣平驳领棕色格纹男士休闲单西D6959','4','1490.00','5960')
+update goods set goods_number=goods_number-4 where goods_id=3
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016101720536','10','2','纯羊毛一粒扣枪驳领纯黑西服套装','1','999.00','999')
+update goods set goods_number=goods_number-1 where goods_id=2
+use bool
+set names utf8
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 5
