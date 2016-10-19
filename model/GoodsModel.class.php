@@ -82,6 +82,25 @@ class GoodsModel extends Model{
 		return $this->db->getAll($sql);
 	}
 
+	public function catGoodsCount($cat_id){
+		$category= new CateModel();
+		$cats=$category->select();	//取出所有栏目
+		$sons=$category->GetCatTree($cats,$cat_id);	//取出给定栏目的子孙栏目
+
+		$sub=array($cat_id);
+
+		if(!empty($sons)){
+			foreach ($sons as $k => $v){
+				$sub[]=$v['cat_id'];
+			}
+		}
+
+		$in=implode(',',$sub);
+
+		$sql="select count(*) from {$this->table} where cat_id in ({$in})";
+		return $this->db->getOne($sql);
+	}
+
 	/*
 	获取购物车商品的详细信息
 	param array $items  购物车中的商品数组

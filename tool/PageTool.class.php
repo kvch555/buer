@@ -50,12 +50,14 @@ page导航里,应根据页码来生成,但同时不能把其他参数搞丢,如c
 
 所以 我们先把地址栏的获取并保存起来*/
 
+defined('ACC')||exit('Acc Denied');
+
 class PageTool{
 	protected $total=0;
 	protected $perpage=10;
 	protected $page=1;
 
-	public function __construct($total,$perpage=false,$page=false){
+	public function __construct($total,$page=false,$perpage=false){
 		$this->total=$total;
 		if($perpage){
 			$this->perpage=$perpage;
@@ -81,18 +83,46 @@ class PageTool{
 		//即保存除page之外的所有单元
 		unset($param['page']);
 
-		$url="{$parse['path']}?{$param}?";
+		$url="{$parse['path']}?";
 		if(!empty($param)){
 			$param=http_build_query($param);
 			$url="{$url}{$param}&";
 		}
 
 		//下一个关键，就是计算页码导航
+		$nav=array();
+		$nav[0]="<span class='page_now'>{$this->page}</span>";
 
+		for($left=$this->page-1,$right=$this->page+1;($left>=1||$right<=$cnt)&&count($nav)<=5;){
+			if($left>=1){
+				array_unshift($nav,'<a href="'.$url.'page='.$left.'">['.$left.']</a>');
+				$left-=1;
+			}
+
+			if($right<=$cnt){
+				array_push($nav,'<a href="'.$url.'page='.$right.'">['.$right.']</a>');
+				$right+=1;
+			}
+			
+		}
+		return implode('',$nav);
 	}
 }
 
-$p=new PageTool(10);
-$p->show();	
+/*
+
+分页类调用测试
+
+new pagetool(总条数,当前页,每页条数);
+
+show() 返回分页代码.
+
+$page = $_GET['page']?$_GET['page']:1;
+
+$p = new PageTool(20,$page,6);
+echo $p->show();
+
+
+*/	
 
 ?>
