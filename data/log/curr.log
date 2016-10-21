@@ -4502,3 +4502,8 @@ select count(*) from goods where goods_sn='BL2016102114756'
 use bool
 set names utf8
 select * from category
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 0,5
