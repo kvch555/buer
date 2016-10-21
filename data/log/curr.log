@@ -4258,3 +4258,247 @@ select * from category
 select * from category
 select * from category
 select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 0,2
+use bool
+set names utf8
+select * from goods where is_delete=0
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select count(*) from goods where goods_sn='BL2016102093595'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time,ori_img,goods_img,thumb_img) values ('haha','BL2016102093595','1','0','0','0','1','1','','0','0','0','0','1476956772','data/images/201610/20/zshbep.png','data/images/201610/20/goods_zshbep.png','data/images/201610/20/thumb_zshbep.png')
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 0,5
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 6,2
+use bool
+set names utf8
+select * from goods where goods_id=26
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+use bool
+set names utf8
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+use bool
+set names utf8
+select count(*) from goods where goods_sn='BL2016102065807'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,goods_desc,is_hot,is_new,is_best,add_time,ori_img,goods_img,thumb_img) values ('test','BL2016102065807','1','0','0','0','1','1','','0','<p>测试测试测试测试</p><p><img src=\"/lib/ueditor/php/upload/image/20161020/1476957092743029.png\" title=\"1476957092743029.png\"/></p><p><img src=\"/lib/ueditor/php/upload/image/20161020/1476957092121904.png\" title=\"1476957092121904.png\"/></p><p><br/></p>','0','0','0','1476957124','data/images/201610/20/srchbw.png','data/images/201610/20/goods_srchbw.png','data/images/201610/20/thumb_srchbw.png')
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 6,2
+use bool
+set names utf8
+select * from goods where goods_id=27
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select count(*) from goods where goods_sn='BL2016102157748'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,goods_desc,is_hot,is_new,is_best,add_time,ori_img,goods_img,thumb_img) values ('test','BL2016102157748','0','0','0','0','1','1','','0','<p>aaa<img src=\"/data/upload/image/20161021/1477020273385263.png\" title=\"1477020273385263.png\" alt=\"aaa.png\"/></p><p><img src=\"/data/upload/image/20161021/1477020299623745.jpg\" title=\"1477020299623745.jpg\"/></p><p><br/></p><p><br/></p>','0','0','0','1477020309','data/images/201610/21/fqcby2.png','data/images/201610/21/goods_fqcby2.png','data/images/201610/21/thumb_fqcby2.png')
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 0,5
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 6,2
+use bool
+set names utf8
+select * from goods where goods_id=27
+select * from category
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 6,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (4,5,6)
+select * from category where cat_id=4
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (14)
+select * from category where cat_id=14
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (14) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (13,14)
+select * from category where cat_id=13
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (13,14) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (12)
+select * from category where cat_id=12
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (12) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (13,14)
+select * from category where cat_id=13
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (13,14) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (13,14)
+select * from category where cat_id=13
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (13,14) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 0,2
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 8,2
+use bool
+set names utf8
+select * from goods where goods_id=28
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select * from category
+use bool
+set names utf8
+select count(*) from goods where goods_sn='BL2016102114756'
+use bool
+set names utf8
+select * from category

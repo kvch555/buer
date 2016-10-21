@@ -89,7 +89,7 @@ function charea(a) {
         <!-- 详细描述 -->
         <table width="90%" id="detail-table" style="display:none">
           <tr>
-            <td><textarea name="goods_desc"></textarea></td>
+            <td><script id="goods_desc" name="goods_desc" type="text/plain"></script></td>
           </tr>
         </table>
 
@@ -139,6 +139,13 @@ function charea(a) {
     </div>
 </div>
 <!-- end goods form -->
-
 </body>
+<script type="text/javascript" src="/lib/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/lib/ueditor/ueditor.all.min.js"></script>
+<script>
+  var ue = UE.getEditor('goods_desc',{
+    initialFrameWidth:750,
+    initialFrameHeight:500,
+    }); 
+</script>
 </html>
