@@ -45,7 +45,17 @@
             </tr>
                         
             <tr>
-              <td bgcolor="#FFFFFF" align="center"><div style="text-align:center"><input type="button" value="立即使用支付宝支付"></div></td>
+              <td bgcolor="#FFFFFF" align="center">
+              <form action="" method="post">
+                <input type="text" name="v_mid" value="20272562"/><br/>
+                <input type="text" name="v_oid" value="<?php echo $order_sn; ?>" /><br/>
+                <input type="text" name="v_amount" value="<?php echo $total;  ?>"/><br/>
+                <input type="text" name="v_moneytype" value="CNY"/><br/>
+                <input type="text" name="v_url" value=""/><br/>
+                <input type="hidden" name="v_md5info" value=""/><br/>   
+                <input type="submit" value="立即在线支付">            
+              </form>
+              </td>
             </tr>
                       </tbody></table>
                     <p style="text-align:center; margin-bottom:20px;">您可以 <a href="index.php">返回首页</a> 或去 <a href="user.php">用户中心</a></p>

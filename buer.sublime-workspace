@@ -82,12 +82,15 @@
 	"expanded_folders":
 	[
 		"/E/PHPnow5.2/vhosts/127.0.0.26",
-		"/E/PHPnow5.2/vhosts/127.0.0.26/lib",
-		"/E/PHPnow5.2/vhosts/127.0.0.26/lib/ueditor",
-		"/E/PHPnow5.2/vhosts/127.0.0.26/lib/ueditor/php"
+		"/E/PHPnow5.2/vhosts/127.0.0.26/lib/ueditor/php",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front"
 	],
 	"file_history":
 	[
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/order.html",
+		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/msg.html",
+		"/E/广州中创金融/公司服务器账户/文档20150615/服务器账号.txt",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/view/admin/templates/goodsadd.html",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/lib/ueditor/php/config.json",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/lib/ueditor/php/Uploader.class.php",
@@ -99,7 +102,6 @@
 		"/E/PHPnow5.2/vhosts/127.0.0.16/yanshi/01.html",
 		"/E/PHPnow5.2/vhosts/127.0.0.16/yanshi/utf8-php/index.html",
 		"/E/PHPnow5.2/vhosts/127.0.0.16/yanshi/utf8-php/ueditor.config.js",
-		"/E/广州中创金融/公司服务器账户/文档20150615/服务器账号.txt",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/tool/PageTool.class.php",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/model/CateModel.class.php",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/lanmu.html",
@@ -123,7 +125,6 @@
 		"/E/PHP笔记/自学IT网/Javascript高级/JS高级之词法分析03.html",
 		"/E/PHP笔记/自学IT网/Javascript高级/arguments详解.html",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/tijiao.html",
-		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/order.html",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/model/OIModel.class.php",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/model/OGModel.class.php",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/tool/CartTool.class.php",
@@ -161,7 +162,6 @@
 		"/E/PHPnow5.2/vhosts/127.0.0.26/login.php",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/logout.php",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/denglu.html",
-		"/E/PHPnow5.2/vhosts/127.0.0.26/view/front/msg.html",
 		"/E/PHPnow5.2/vhosts/127.0.0.26/view/header.html",
 		"/E/PHPnow5.2/vhosts/cuicui/Application/Admin/View/Data/zqMap.html",
 		"/E/PHPnow5.2/vhosts/cuicui/Application/Wap/Controller/IndexController.class.php",
@@ -224,6 +224,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"网银",
 			"getFullName",
 			"fullName",
 			"getFilePath",
