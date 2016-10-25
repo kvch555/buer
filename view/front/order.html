@@ -46,13 +46,13 @@
                         
             <tr>
               <td bgcolor="#FFFFFF" align="center">
-              <form action="" method="post">
+              <form action="https://pay3.chinabank.com.cn/PayGate" method="post">
                 <input type="text" name="v_mid" value="20272562"/><br/>
                 <input type="text" name="v_oid" value="<?php echo $order_sn; ?>" /><br/>
                 <input type="text" name="v_amount" value="<?php echo $total;  ?>"/><br/>
                 <input type="text" name="v_moneytype" value="CNY"/><br/>
-                <input type="text" name="v_url" value=""/><br/>
-                <input type="hidden" name="v_md5info" value=""/><br/>   
+                <input type="text" name="v_url" value="<?php echo $v_url; ?>"/><br/>
+                <input type="hidden" name="v_md5info" value="<?php echo $v_md5info; ?>"/><br/>   
                 <input type="submit" value="立即在线支付">            
               </form>
               </td>
