@@ -182,9 +182,9 @@ if($act=='buy'){ //把商品加到购物车
 	/*计算在线支付的md5值
 	v_amount,v_moneytype,v_oid,v_mid,v_url key
 	*/
-	$v_url='http://127.0.0.16/recive.php';
-	$md5Key='abcdefg@123456';
-	$v_md5info=md5($total.'CNY'.$order_sn.'20272562'.$v_url.$md5Key);
+	$v_url='http://127.0.0.26/receive.php';
+	$md5Key='#(%#WU)(UFGDKJGNDFG';
+	$v_md5info=md5($total.'CNY'.$order_sn.'1009001'.$v_url.$md5Key);
 	$v_md5info=strtoupper($v_md5info);
 	include(ROOT.'view/front/order.html');
 }

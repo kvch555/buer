@@ -4507,3 +4507,60 @@ set names utf8
 select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
 select * from category
 select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 0,5
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 0,5
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=4
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016102650155'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('aa','aaa','185944345@qq.com','aaa','','','','','','4','1477471912','199','0','匿名','OI2016102650155')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016102650155','11','4','蓝黑竖条纹男士休闲衬衫','1','199.00','199')
+update goods set goods_number=goods_number-1 where goods_id=4
+use bool
+set names utf8
+use bool
+set names utf8
+select * from goods where goods_id=4
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016102698070'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('aa','aaa','185944345@qq.com','a','','','','','','4','1477471961','199','0','匿名','OI2016102698070')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016102698070','12','4','蓝黑竖条纹男士休闲衬衫','1','199.00','199')
+update goods set goods_number=goods_number-1 where goods_id=4
+use bool
+set names utf8
+use bool
+set names utf8
+select * from goods where goods_id=4
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016102612718'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('aaa','aaa','185944345@qq.com','aa','','','','','','4','1477472004','199','0','匿名','OI2016102612718')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016102612718','13','4','蓝黑竖条纹男士休闲衬衫','1','199.00','199')
+update goods set goods_number=goods_number-1 where goods_id=4
