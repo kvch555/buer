@@ -4564,3 +4564,78 @@ select count(*) from orderinfo where order_sn='OI2016102612718'
 insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('aaa','aaa','185944345@qq.com','aa','','','','','','4','1477472004','199','0','匿名','OI2016102612718')
 insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016102612718','13','4','蓝黑竖条纹男士休闲衬衫','1','199.00','199')
 update goods set goods_number=goods_number-1 where goods_id=4
+use bool
+set names utf8
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods order by add_time limit 5
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (4,5,6) order by add_time limit 0,5
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=4
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='4'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016102753067'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('aa','aaa','185944345@qq.com','aaa','','','','','','4','1477555732','199','0','匿名','OI2016102753067')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016102753067','14','4','蓝黑竖条纹男士休闲衬衫','1','199.00','199')
+update goods set goods_number=goods_number-1 where goods_id=4
+use bool
+set names utf8
+use bool
+set names utf8
+select * from goods where goods_id=4
+use bool
+set names utf8
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016102730332'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('aa','aaa','185944345@qq.com','aaa','','','','','','4','1477555773','0','0','匿名','OI2016102730332')
+use bool
+set names utf8
+use bool
+set names utf8
+select * from goods where goods_id=4
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=4
+use bool
+set names utf8
+select * from goods where goods_id=4
+select * from category
+use bool
+set names utf8
+select * from category
+select count(*) from goods where cat_id in (1,2,3)
+select * from category where cat_id=1
+select * from category
+select * from category
+select * from category
+select goods_id,goods_name,shop_price,thumb_img,market_price from goods where cat_id in (1,2,3) order by add_time limit 0,2
+use bool
+set names utf8
+select * from goods where goods_id=2
+select * from category
+use bool
+set names utf8
+select * from goods where goods_id=2
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='2'
+use bool
+set names utf8
+select goods_id,goods_name,thumb_img,shop_price,market_price from goods where goods_id ='2'
+use bool
+set names utf8
+select count(*) from orderinfo where order_sn='OI2016102785520'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('vv','vv','185944345@qq.com','vvv','','','','','','4','1477555812','999','0','匿名','OI2016102785520')
+insert into ordergoods (order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) values ('OI2016102785520','16','2','纯羊毛一粒扣枪驳领纯黑西服套装','1','999.00','999')
+update goods set goods_number=goods_number-1 where goods_id=2
